@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Black Chancery";
+    src: 
+        url(../../assets/fonts/BLKCHCRY.eot) format('eot'),
+        url(../../assets/fonts/BLKCHCRY.otf) format('otf'),
+        url(../../assets/fonts/BLKCHCRY.TTF) format('ttf'),
+        url(../../assets/fonts/BLKCHCRY.woff) format('woff'),
+        url(../../assets/fonts/BLKCHCRY.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
