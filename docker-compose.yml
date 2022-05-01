@@ -7,11 +7,8 @@ services:
       - web
     volumes:
       - ./html:/usr/share/nginx/html:ro
-    environment:
-      - NGINX_HOST=thegreatforest.nl
-      - NGINX_PORT=80
-    expose:
-      - "80"
+    ports:
+      - "9876:80"
     labels:
       - "traefik.frontend.rule=Host:www.thegreatforest.nl,thegreatforest.nl"
       - "traefik.frontend.headers.customFrameOptionsValue=SAMEORIGIN"
@@ -21,7 +18,7 @@ services:
       - "traefik.frontend.headers.STSIncludeSubdomains=false"
       - "traefik.frontend.headers.STSPreload=true"
       - "traefik.docker.network=web"
-      - "traefik.port=8080"
+      - "traefik.port=80"
       - "traefik.enabled=true"
 
 networks:
