@@ -25,3 +25,7 @@ services:
       - "traefik.docker.network=web"
       - "traefik.port=8080"
       - "traefik.enabled=true"
+
+networks:
+  web:
+    external: true
