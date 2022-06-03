@@ -10,7 +10,7 @@ services:
     ports:
       - "9876:80"
     labels:
-      - "traefik.frontend.rule=Host:www.thegreatforest.nl,thegreatforest.nl"
+      - "traefik.frontend.rule=Host:www.luckfindersalmanac.com,luckfindersalmanac.com"
       - "traefik.frontend.headers.customFrameOptionsValue=SAMEORIGIN"
       - "traefik.frontend.headers.contentTypeNosniff=true"
       - "traefik.frontend.headers.browserXSSFilter=true"
