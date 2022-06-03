@@ -7,8 +7,8 @@ services:
       - web
     volumes:
       - ./html:/usr/share/nginx/html:ro
-    ports:
-      - "9876:80"
+      - ./logs:/var/log/nginx
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     labels:
       - "traefik.frontend.rule=Host:www.luckfindersalmanac.com,luckfindersalmanac.com"
       - "traefik.frontend.headers.customFrameOptionsValue=SAMEORIGIN"
