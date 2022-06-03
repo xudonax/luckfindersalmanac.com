@@ -40,3 +40,7 @@ li.list-group-item img {
 .center {
     text-align: center
 }
+
+.list-group-padding {
+    padding-top: 1em;
+}
